@@ -3,6 +3,7 @@ class AudioManager {
     constructor() {
         this.audio = new Audio('assets/piano-loop.mp3');
         this.audio.loop = true;
+        this.audio.autoplay = true; // Attempt auto-play
         this.audio.volume = 0.3;
         this.audio.playbackRate = 0.85; // Slower playback for elegant feel
         this.isPlaying = false;
